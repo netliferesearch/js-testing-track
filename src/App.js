@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
+import Menu from "./Menu.js";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Menu />
         <h1>Fagspor for javascript testing</h1>
         <p>
           If you like it you better put a regression test on it.{" "}

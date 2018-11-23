@@ -13,3 +13,9 @@ it("Menu button is working", () => {
   menuComponent.find("button").simulate("click");
   expect(menuComponent.state("isToggleOn")).toBe(true);
 });
+
+it("renders without crashing", () => {
+  const div = document.createElement("div");
+  ReactDOM.render(<Menu />, div);
+  ReactDOM.unmountComponentAtNode(div);
+});

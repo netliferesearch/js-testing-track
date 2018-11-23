@@ -7,3 +7,8 @@ it("renders without crashing", () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
+
+it("should say ole is awesome", () => {
+  const fact = "ole is awesome";
+  expect(fact).toBe("ole is awesome");
+});

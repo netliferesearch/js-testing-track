@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - lts/*
+env:
+  global:
+    - APP_URL=http://localhost:3000/
+    - CALLBACK_URL=http://localhost:3000/
+    - SESSION_SECRET=somegreatsecret
+    - NODE_ENV=dev
+    - developerBar=true
+
+  matrix:
+    - TESTFOLDER=.
+cache:
+  directories:
+    - node_modules
+install:
+  - cd $TESTFOLDER
+  - npm install
+script:
+  - npm test
+notifications:
+  slack: netlifedesign:KTEpsUkx4Kc47M3SxdGPwzh8

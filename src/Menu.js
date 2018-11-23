@@ -9,7 +9,6 @@ class Menu extends Component {
   }
 
   toggleMenu(e) {
-    console.log("test");
     this.setState(state => ({
       isToggleOn: !state.isToggleOn
     }));

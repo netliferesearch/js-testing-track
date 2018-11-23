@@ -6,6 +6,9 @@ class Menu extends Component {
     super(props);
     this.state = { isToggleOn: false };
     this.toggleMenu = this.toggleMenu.bind(this);
+    if (this.props.crash) {
+      throw new Error("Crashing here we go!");
+    }
   }
 
   toggleMenu(e) {

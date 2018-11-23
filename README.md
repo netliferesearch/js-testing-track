@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/netliferesearch/js-testing-track.svg?branch=master)](https://travis-ci.com/netliferesearch/js-testing-track
+[![Build Status](https://travis-ci.com/netliferesearch/js-testing-track.svg?branch=master)](https://travis-ci.com/netliferesearch/js-testing-track)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
